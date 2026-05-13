@@ -1,0 +1,32 @@
+{
+  "name": "ice-scream-shop",
+  "version": "1.0.0",
+  "description": "Server para el backend",
+  "keywords": [
+    "WebServer"
+  ],
+  "homepage": "https://github.com/Ceykerr/Backend#readme",
+  "bugs": {
+    "url": "git+https://github.com/Ceykerr/Backend.git/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ceykerr/Backend.git"
+  },
+  "license": "MIT",
+  "author": "Natasha Rosa Vargas",
+  "type": "module",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "dev": "nodemon app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "ejs": "^4.0.1",
+    "express": "^5.2.1",
+    "html": "^1.0.0",
+    "install": "^0.13.0",
+    "nodemon": "^3.1.14"
+  }
+}
