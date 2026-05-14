@@ -1,20 +1,22 @@
-module.exports = (sequelize, DataTypes) => {
+const Ingreso = (sequelize, DataTypes) => {
   const Ingreso = sequelize.define("Ingreso", {
     monto: {
       type: DataTypes.FLOAT,
-      allowNull: false
+      allowNull: false,
     },
     tipo: {
-      type: DataTypes.STRING // salario, extra
+      type: DataTypes.STRING, // salario, extra
     },
     descripcion: {
-      type: DataTypes.STRING
+      type: DataTypes.STRING,
     },
     fecha: {
       type: DataTypes.DATE,
-      allowNull: false
-    }
+      allowNull: false,
+    },
   });
 
   return Ingreso;
 };
+
+export default Ingreso;

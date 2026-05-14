@@ -1,17 +1,19 @@
-module.exports = (sequelize, DataTypes) => {
+const Ahorro = (sequelize, DataTypes) => {
   const Ahorro = sequelize.define("Ahorro", {
     monto: {
       type: DataTypes.FLOAT,
-      allowNull: false
+      allowNull: false,
     },
     descripcion: {
-      type: DataTypes.STRING
+      type: DataTypes.STRING,
     },
     fecha: {
       type: DataTypes.DATE,
-      allowNull: false
-    }
+      allowNull: false,
+    },
   });
 
   return Ahorro;
 };
+
+export default Ahorro;
